@@ -1,0 +1,90 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+body{
+    background-color: darkcyan;
+}
+.box{
+    background-color: bisque;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(5, 5, 5, 0.15);
+}
+.box h2{
+    font-size: 35px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.box h2::after{
+    content: '';
+    width: 100px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: darkcyan;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box blockquote{
+    font-size: 25px;
+    min-height: 110px;
+}
+.box blockquote::before, .box blockquote::after{
+    content: '';
+}
+.box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.box span::before{
+    content: '';
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: darkcyan;
+    position: absolute;
+    bottom: 5px;
+    left: -50%;
+}
+.box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.box button{
+    background-color:darkcyan;
+    color: bisque;
+    border-radius: 25px;
+    border: 1px solid rgb(50, 50,50);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.box button img{
+    width: 25px;
+    margin-right: 10px;
+}
+.box button:nth-child(2){
+    background-color: black;
+    color: white;
+}
